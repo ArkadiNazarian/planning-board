@@ -52,5 +52,11 @@ export const tickets_list = [
         program_increment_id: "p3",
         release_train_id:"r2",
         title: "Ticket 4"
+    },
+    {
+        _id: "t4",
+        program_increment_id: "p3",
+        release_train_id:"r1",
+        title: "Ticket 4"
     }
-]
+ ]

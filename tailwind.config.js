@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       transformOrigin: {
-        'custom-origin': '0% 100%',
+        'custom-origin': '10% 100%',
       }
     },
   },
