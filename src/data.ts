@@ -15,6 +15,10 @@ export const program_increment_list = [
 
 export const release_train_list = [
     {
+        id:"r0",
+        title:""
+    },
+    {
         _id: "r1",
         title: "Release train 1"
     },
