@@ -15,7 +15,7 @@ export const program_increment_list = [
 
 export const release_train_list = [
     {
-        id:"r0",
+        _id:"r0",
         title:""
     },
     {
@@ -62,5 +62,19 @@ export const tickets_list = [
         program_increment_id: "p3",
         release_train_id:"r1",
         title: "Ticket 4"
+    }
+    ,
+    {
+        _id: "t5",
+        program_increment_id: "p3",
+        release_train_id:"r1",
+        title: "Ticket 5"
+    }
+    ,
+    {
+        _id: "t6",
+        program_increment_id: "p3",
+        release_train_id:"r1",
+        title: "Ticket 6"
     }
  ]
