@@ -1,7 +1,11 @@
-th{
+th {
     rotate: 270deg;
 }
 
-td{
+td {
     min-width: 30rem;
+}
+
+td:not(.except) {
+    height: 10rem;
 }

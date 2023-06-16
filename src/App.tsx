@@ -4,22 +4,6 @@ import './my.css'
 
 const App = () => {
 
-  const color_picker = (index: number) => {
-    console.log(index)
-    switch (index) {
-      case 1:
-        return "custom_yellow";
-      case 2:
-        return "custom_red";
-      case 3:
-        return "custom_purple";
-      case 4:
-        return "custom_pink";
-      default:
-        break;
-    }
-  }
-
   return (
     <div className="tw-w-full">
       <table className="tw-border">
@@ -28,13 +12,13 @@ const App = () => {
             release_train_list.map((train_value, train_index) => (
               <tr key={train_value._id}>
                 <th className={`${train_index === 0 ? "tw-border-none" : "tw-border"}`}>
-                  <div className={`tw-bg-${color_picker(train_index)} tw-p-2`}>
+                  <div className={`${(train_index === 1 || train_index % 4 === 1) ? "tw-bg-custom_yellow tw-text-custom_yellow" : (train_index === 2 || train_index % 4 === 2) ? "tw-bg-custom_red tw-text-custom_red" : (train_index === 3 || train_index % 4 === 3) ? "tw-bg-custom_purple tw-text-custom_purple" : (train_index === 4 || (train_index % 4 === 0 && train_index !== 0)) && "tw-bg-custom_pink tw-text-custom_pink"} tw-p-2 tw-min-w-max`}>
                     {train_value.title}
                   </div>
                 </th>
                 {
                   program_increment_list.map((increment_value, index) => (
-                    <td key={increment_value._id} className={` ${train_index !== 0 && "tw-border"} ${train_index === 0 && "tw-pl-3 tw-font-bold"}`}>{train_index === 0 ? increment_value.title : <Card program_increment_id={increment_value._id} release_train_id={train_value._id} />}</td>
+                    <td key={increment_value._id} className={` ${train_index !== 0 && "tw-border"} ${train_index === 0 && "tw-pl-3 tw-font-bold except"}`}>{train_index === 0 ? increment_value.title : <Card program_increment_id={increment_value._id} release_train_id={train_value._id} />}</td>
                   ))
                 }
               </tr>
