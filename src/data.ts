@@ -15,8 +15,8 @@ export const program_increment_list = [
 
 export const release_train_list = [
     {
-        _id:"r0",
-        title:""
+        _id: "r0",
+        title: ""
     },
     {
         _id: "r1",
@@ -36,45 +36,50 @@ export const tickets_list = [
     {
         _id: "t1",
         program_increment_id: "p1",
-        release_train_id:"r1",
-        title: "Ticket 1"
+        release_train_id: "r1",
+        title: "Ticket 1",
+        level: "In-progress"
     },
     {
         _id: "t2",
         program_increment_id: "p2",
-        release_train_id:"r2",
-        title: "Ticket 2"
+        release_train_id: "r2",
+        title: "Ticket 2",
+        level: "In-progress"
     },
     {
         _id: "t3",
         program_increment_id: "p3",
-        release_train_id:"r3",
-        title: "Ticket 3"
+        release_train_id: "r3",
+        title: "Ticket 3",
+        level: "In-progress"
     },
     {
         _id: "t4",
         program_increment_id: "p3",
-        release_train_id:"r2",
-        title: "Ticket 4"
+        release_train_id: "r2",
+        title: "Ticket 4",
+        level: "In-progress"
     },
     {
         _id: "t4",
         program_increment_id: "p3",
-        release_train_id:"r1",
-        title: "Ticket 4"
-    }
-    ,
+        release_train_id: "r1",
+        title: "Ticket 4",
+        level: "In-progress"
+    },
     {
         _id: "t5",
         program_increment_id: "p3",
-        release_train_id:"r1",
-        title: "Ticket 5"
-    }
-    ,
+        release_train_id: "r1",
+        title: "Ticket 5",
+        level: "In-progress"
+    },
     {
         _id: "t6",
         program_increment_id: "p3",
-        release_train_id:"r1",
-        title: "Ticket 6"
+        release_train_id: "r1",
+        title: "Ticket 6",
+        level: "In-progress"
     }
- ]
+]

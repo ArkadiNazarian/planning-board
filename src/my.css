@@ -1,4 +1,7 @@
 th{
-    height: 10rem;
-    rotate: 270deg;  
+    rotate: 270deg;
+}
+
+td{
+    min-width: 30rem;
 }
